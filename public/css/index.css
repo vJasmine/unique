@@ -1,3 +1,71 @@
-#case>div>a:hover{
+/* 案例右侧更多鼠标悬停时的样式 */
+#case>div>a:hover,#hotel>div>a:hover{
     color: tomato;
+}
+/* 每个案例的宽高边框样式 */
+#case>ul>li,#hotel>ul>li,#tips>ul>li{
+    width: 32.5%;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+/* 案例图片鼠标悬停时放大 */
+#case>ul>li>a{
+    display: block;
+    overflow: hidden;
+}
+#case>ul>li>a>img{
+    display: block;
+    width: 100%;
+    transition: all 1s ease;
+}
+#case>ul>li>a>img:hover{
+    transform: scale(1.3);
+}
+/* 酒店图片鼠标悬停时显示文字 */
+#hotel>ul>li{
+    position: relative;
+}
+#hotel>ul>li>a:nth-child(2){
+    display: none;
+}
+#hotel>ul>li:hover>a:nth-child(2){
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    line-height: 100%;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+}
+#hotel>ul>li>a:nth-child(2)>p{
+    margin:30% 0; 
+}
+/* 酒店图片鼠标悬停时上移 */
+#hotel>ul>li:hover{
+    transform: translateY(-5px);
+}
+/* 新人攻略样式 */
+#tips>ul>li{
+    position: relative;
+}
+#tips>ul>li>a{
+    display: block;
+    width: 95%;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+#tips>ul>li>a>span.bg-dark{
+    position: absolute;
+    top: -15em;
+    right:-1em;
+}
+/* 新人攻略鼠标悬停时2D转换 */
+#tips>ul>li>a>span:hover{
+    transform: translateY(-5px);
+    color:red
 }
