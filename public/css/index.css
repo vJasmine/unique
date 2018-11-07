@@ -1,6 +1,6 @@
 /* 案例右侧更多鼠标悬停时的样式 */
 #case>div>a:hover,#hotel>div>a:hover,#tips>div>a:hover{
-    color: red;
+    color: #c00;
 }
 /* 每个案例、酒店的宽高边框样式 */
 #case>ul>li,#hotel>ul>li{
@@ -67,7 +67,7 @@
 }
 /* 鼠标放在链接上字体颜色 */
 #tips>div>ul>li>p>a:hover{
-    color: red;
+    color: #c00;
 }
 #tips>div>ul>li>p:nth-child(2){
     height: 70%;

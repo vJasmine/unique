@@ -1,0 +1,39 @@
+.container>div{
+    position: relative;
+    height: 378px;
+    background: url("../img/login/login.png") no-repeat;
+}
+.container>div>ul{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+.container>div>ul>li>input{
+    border: 0;
+    outline: 0;
+    height: 100%;
+    font-size: 14x;
+}
+li.uname,li.upwd,li.login{
+    border:1px solid #eee;
+    width: 90%;
+    height: 15%;
+    margin: auto;
+}
+li.login>input{
+    width: 100%;
+    background: #c00;
+    font-size: 16px;
+    color: #fff;
+}
+li>img{
+    margin: 0 0.8em 0 0.8em;
+}
+.container ul>li:first-child{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.container ul>li:last-child>a:hover{
+    color: #c00;
+}
