@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>register</title>
+</head>
+<body>
+    <header id="header" class="container"></header>
+    <div id="register" class="container">
+        <!-- 最外层图片背景 -->
+        <div class="mt-5">
+            <ul class="bg-white h-75">
+                <li class="mt-3 mb-0 border-0 d-flex justify-content-between align-items-end">
+                    <span>会员注册</span>
+                    <!-- <span>已注册可</span> -->
+                    <a href="#">已注册点此直接登录</a>
+                </li>
+                <li class="name mt-3">
+                    <img src="img/register/name.png">
+                    <input type="text" name="uname" placeholder="请输入用户名" />
+                    <div>
+                        <img src="img/register/error.png" alt="">
+                        <span>由3-10位汉字、字母、数字和符号组成</span>
+                    </div>
+                </li>
+                <li class="phone">
+                    <img src="img/register/phone.png">
+                    <input type="password" name="phone" placeholder="请输入手机号码" />
+                    <div>
+                        <img src="img/register/error.png" alt="">
+                        <span>请输入11位手机号码</span>
+                    </div>
+                </li>
+                <li class="pwd">
+                    <img src="img/login/pwd.png">
+                    <input type="password" name="upwd" placeholder="密码由6-12位字母、数字和符号组成" />
+                    <div>
+                        <img src="img/register/error.png" alt="">
+                        <span>密码必须含字母和数字，区分大小写</span>
+                    </div>
+                </li>
+                <li class="pwd2">
+                    <img src="img/login/pwd.png">
+                    <input type="password" name="upwd" placeholder="请再次输入以上密码" />
+                    <div>
+                        <img src="img/register/error.png" alt="">
+                        <span>两次输入的密码不一致，请重试</span>
+                    </div>
+                </li>
+                <li class="agree mb-1">
+                    <input type="checkbox" name="agree" /> <span>我已阅读并接受<a href="#">《找我服务条款》</a></span>
+                </li>
+                <li class="reg_btn border-0">
+                    <input type="button" value="立即注册" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer id="footer" class="container mt-5"></footer>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
