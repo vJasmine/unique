@@ -12,7 +12,9 @@
 <body>
     <header id="header" class="container"></header>
     <div id="login" class="container">
-        <div class="border bg-white mt-5">
+        <!-- 背景图片 -->
+        <div class="mt-5">
+            <!-- 白色区域 -->
             <div class="bg-white h-75">
                 <ul id="zh_login">
                     <li class="mt-3">
@@ -23,19 +25,25 @@
                         <img src="img/login/user.png">
                         <input type="text" name="uname" placeholder="用户名/邮箱/手机号"/>
                     </li>
-                    <li class="pwd mt-3">
+                    <li class="pwd mt-4">
                         <img src="img/login/pwd.png">
                         <input type="password" name="upwd" />
                     </li>
-                    <li class="forget mt-2 d-flex justify-content-between">
-                        <input type="checkbox" />记住密码
-                        <a href="#" class="pr-3">忘记密码？</a>
+                    <li class="fail">
+                        <!-- <img src="img/login/Error.png"/> -->
+                        <!-- <span>登录失败，用户名或密码错误</span> -->
                     </li>
-                    <li class="btn_login mt-3 border-0">
+                    <li class="forget d-flex justify-content-between">
+                        <span>
+                            <input type="checkbox" /> 记住密码
+                        </span>
+                        <span><a href="#">忘记密码?</a></span>
+                    </li>
+                    <li class="btn_login mt-1 border-0">
                         <input type="button" value="登录" />
                     </li>
-                    <li class="mt-2 text-right">
-                        <a href="#" class="pr-3">会员注册</a>
+                    <li class="mt-1 text-right">
+                        <a href="#">会员注册</a>
                     </li>
                 </ul>
                 <!-- <ul id="wx_login"  class="text-center">
@@ -46,10 +54,9 @@
             </div>
         </div>
     </div>
-    <footer id="footer" class="container mt-5"></footer>
+    <footer id="footer"></footer>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/ajax.js"></script>
     <script src="js/footer.js"></script>
 </body>
 </html>
