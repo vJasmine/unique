@@ -12,14 +12,14 @@
     right: 15%;
 }
 /* 注册文本及输入框基本样式 */
-ul>li{
+#register ul>li{
     width: 90%;
     height: 9%;
     margin: 0 auto 1.8rem;
     border: 1px solid #ccc;
 }
 /* 输入框样式 */
-ul>li.name>input,ul>li.phone>input,ul>li.pwd>input,ul>li.pwd2>input,ul>li.reg_btn>input{
+#register ul>li.name>input,ul>li.phone>input,ul>li.pwd>input,ul>li.pwd2>input,ul>li.reg_btn>input{
     border: 0;
     outline: 0;
     width: 80%;
@@ -27,39 +27,49 @@ ul>li.name>input,ul>li.phone>input,ul>li.pwd>input,ul>li.pwd2>input,ul>li.reg_bt
     font-size: 14x;
 }
 /* 第一行样式 */
-ul>li:first-child>span:first-child{
+#register ul>li:first-child>span:first-child{
     font-weight: bold;
     font-size: 18px;
 }
-ul>li:first-child>a,ul>li.agree>span>a{
+#register ul>li:first-child>a,ul>li.agree>span>a{
     color: red;
     opacity: 0.7;
 }
-ul>li:first-child>a:hover,ul>li.agree>span>a:hover{
+#register ul>li:first-child>a:hover,ul>li.agree>span>a:hover{
     color: red;
     opacity: 1;
 }
 /* 图片样式 */
-ul>li>img{
+#register ul>li>img{
     margin: 0 0.8em 0 0.8em;
 }
 /*提示消息样式*/
-ul>li>div{
+#register ul>li>div{
     line-height: 30px;
     color: red;
     opacity: 0.8;
 }
 /* 条款样式 */
-ul>li.agree{
+#register ul>li.agree{
     height: 5%;
     border: 0;
     text-align: right;
 }
 /* 注册按钮样式 */
-ul>li:last-child>input{
+#register ul>li:last-child>input{
     width: 100%;
     padding: 0.5em 0 0.5em 0;
     background: #c00;
     font-size: 16px;
     color: #fff;
+    opacity: 0.9;
+}
+#register ul>li:last-child>input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+/* 页脚定位 */
+#footer{
+    position: absolute;
+    bottom: 0;
 }
