@@ -1,7 +1,7 @@
 /* 最外层图片背景 */
 #register>div{
     position: relative;
-    height: 540px;
+    height: 520px;
     background: url("../img/register/bg_register.png") no-repeat;
 }
 /* 白色区域样式 */
@@ -14,12 +14,12 @@
 /* 注册文本及输入框基本样式 */
 #register ul>li{
     width: 90%;
-    height: 9%;
-    margin: 0 auto 1.8rem;
-    border: 1px solid #ccc;
+    height: 10%;
+    margin: 0 auto 1.5rem;
+    border: 1px solid #eee;
 }
 /* 输入框样式 */
-#register ul>li.name>input,ul>li.phone>input,ul>li.pwd>input,ul>li.pwd2>input,ul>li.reg_btn>input{
+#register ul>li.name>input,ul>li.phone>input,ul>li.pwd1>input,ul>li.pwd2>input,ul>li.reg_btn>input{
     border: 0;
     outline: 0;
     width: 80%;
@@ -31,10 +31,6 @@
     font-weight: bold;
     font-size: 18px;
 }
-#register ul>li:first-child>a,ul>li.agree>span>a{
-    color: red;
-    opacity: 0.7;
-}
 #register ul>li:first-child>a:hover,ul>li.agree>span>a:hover{
     color: red;
     opacity: 1;
@@ -43,11 +39,12 @@
 #register ul>li>img{
     margin: 0 0.8em 0 0.8em;
 }
-/*提示消息样式*/
+/*警告消息样式*/
 #register ul>li>div{
-    line-height: 30px;
     color: red;
-    opacity: 0.8;
+}
+#register ul>li>div>img{
+    vertical-align: baseline;
 }
 /* 条款样式 */
 #register ul>li.agree{
@@ -69,7 +66,7 @@
     cursor: pointer;
 }
 /* 页脚定位 */
-#footer{
+/* #footer{
     position: absolute;
     bottom: 0;
-}
+} */
