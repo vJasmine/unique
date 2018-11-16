@@ -1,0 +1,53 @@
+/* 顶部筛+排序选样式 */
+/* 筛选外框 */
+#main>nav>ul{
+    border: 1px solid #eee;
+}
+/* 内部文字高宽对齐方式 */
+#main>nav>ul>li,#main>div>nav>p{
+    width: 95%;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+}
+/* 内部文字间距 */
+#main>nav>ul>li>span:not(:first-child),#main>div>nav>p>span:not(:first-child){
+    padding-left: 1.2rem;
+}
+/* 内部文字选中时字体颜色 */
+.activity{
+    color: #c00;
+}
+/* 鼠标悬停样式 */
+#main>nav span:hover,#main>div>nav span:hover{
+    cursor: pointer;
+}
+/* 排序背景 */
+#main>div>nav{
+    background: #eee;
+}
+/* 图片列表样式 */
+#main>div#case_list>ul>li{
+    border: 1px solid #eee;
+    /* background: #eee; */
+}
+#main>div#case_list>ul>li:hover{
+    border: 1px solid #c00;
+}
+/* 图片宽度 */
+#main>div#case_list a>img{
+    width: 98%;
+}
+/* 标题颜色样式 */
+.myc00{
+    color: #c00;
+}
+#main>div#case_list a:hover{
+    color: #c00;
+}
+
+/* 页码样式 */
+#page>ul{
+    margin: auto;
+    cursor: pointer;
+}

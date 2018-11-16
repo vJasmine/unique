@@ -42,6 +42,7 @@
 /*警告消息样式*/
 #register ul>li>div{
     color: red;
+    opacity: 0;
 }
 #register ul>li>div>img{
     vertical-align: baseline;
@@ -66,7 +67,7 @@
     cursor: pointer;
 }
 /* 页脚定位 */
-/* #footer{
+#footer.stay-bottom {
     position: absolute;
     bottom: 0;
-} */
+}

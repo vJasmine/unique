@@ -83,7 +83,7 @@
     color: #c00;
 }
 /* 页脚定位 */
-/* #footer{
+#footer.stay-bottom {
     position: absolute;
     bottom: 0;
-} */
+}
