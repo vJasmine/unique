@@ -21,17 +21,21 @@
                         <span>会员登录</span>
                         <img title="扫码登录" src="img/login/er.png">
                     </li>
-                    <li class="name mt-2">
+                    <li class="uname mt-2">
                         <img src="img/login/user.png">
-                        <input type="text" name="uname" placeholder="用户名/邮箱/手机号"/>
+                        <input type="text" name="uname" placeholder="用户名/手机号"/>
                     </li>
-                    <li class="pwd mt-4">
+                    <li class="fail">
+                        <img src="img/login/Error.png"/>
+                        <span>用户名不能为空!</span>
+                    </li>
+                    <li class="pwd">
                         <img src="img/login/pwd.png">
                         <input type="password" name="upwd" />
                     </li>
                     <li class="fail">
-                        <!-- <img src="img/login/Error.png"/> -->
-                        <!-- <span>登录失败，用户名或密码错误</span> -->
+                        <img src="img/login/Error.png"/>
+                        <span>登录失败，用户名或密码错误</span>
                     </li>
                     <li class="forget d-flex justify-content-between">
                         <span>
@@ -43,7 +47,7 @@
                         <input type="button" value="登录" />
                     </li>
                     <li class="mt-1 text-right">
-                        <a href="http://127.0.0.1:3000/register.html">会员注册</a>
+                        <a href="register.html">会员注册</a>
                     </li>
                 </ul>
                 <!-- <ul id="wx_login"  class="text-center">

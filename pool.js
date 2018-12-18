@@ -4,7 +4,7 @@ var pool=mysql.createPool({
     port:3306,
     user:'root',
     password:'',
-    database:'zw',
+    database:'v1',
     connectionLimit:20
 })
 module.exports=pool;

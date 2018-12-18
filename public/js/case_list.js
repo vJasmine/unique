@@ -1,4 +1,11 @@
 $(function(){
+    // 获取搜索关键字
+    var kw="";
+    if(location.search.indexOf("kw=")!=-1){
+        var kw=decodeURI(
+          location.search.split("=")[1]
+        );
+    }
     function loadPage(pNum=1,pram,kw){
         $.ajax({
             url:"http://127.0.0.1:3000/clist",
@@ -52,7 +59,11 @@ $(function(){
         })
     }
     // 页面首次加载时，立即调用函数
-    loadPage();
+    if(kw==""){
+        loadPage()
+    }else{
+        loadPage(1,1,kw);
+    }
     // 点击按浏览量/价格排序时重新加载页面
     $(".order p").on("click","span",function(e){
         var span=$(this);
@@ -60,11 +71,11 @@ $(function(){
             span.addClass("activity")
                 .siblings().removeClass("activity")
             if(span.html()=="浏览量"){
-                loadPage(1,2,"")
+                loadPage(1,2,kw)
             }else if(span.html()=="价格"){
-                loadPage(1,3,"")
+                loadPage(1,3,kw)
             }else{
-                loadPage(1,1,"")
+                loadPage(1,1,kw)
             }
         }
     })

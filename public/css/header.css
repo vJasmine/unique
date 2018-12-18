@@ -1,41 +1,38 @@
 #header{
-    height: 70px;
-    line-height: 70px;
+    height: 7em;
+    line-height: 7em;
 }
 /* logo样式 */
 #header>a{
     width: 12%;
 }
 #header>a>img{
-    width: 100%;
+    width: 70%;
 }
 /* 导航栏样式 */
 #header>ul{
-    width: 50%;
+    width: 48%;
 }
 #header>ul>li>a:hover,#header>#search>a:hover{
     color: #c00;
 }
 /* 搜索样式 */
 #header>#search{
-    width: 30%;
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#header>#search>div{
-    width: 85%;
-}
-#header>#search input{  /*搜素框样式*/
-    width: 75%;
+#header>#search>input,button{  /*搜素框样式*/
+    width: 65%;
     outline: 0;
-    height: 30px;
+    height: 2.5em;
     border: 1px solid #c00;
-    font-size: 12px;
+    font-size: 0.8em;
 }
-#header>#search input:last-child{/*搜素按钮样式*/
-    width: 25%;
+#header>#search>button{
+    width: 15%;
     background: #c00;
-    color: #fff;
-    border: 0;
-    padding: 0 1em 0 1em;
-    opacity: 0.9;
+    color: white;
     cursor: pointer;
 }

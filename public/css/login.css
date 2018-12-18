@@ -33,14 +33,14 @@
     opacity: 1;
 }
 /* 3.4 用户名、密码、登录li样式 */
-#login ul#zh_login>li.name,ul#zh_login>li.pwd,ul#zh_login>li.btn_login{
+#login ul#zh_login>li.uname,ul#zh_login>li.pwd,ul#zh_login>li.btn_login{
     border:1px solid #eee;
     width: 90%;
     padding: 0.5em 0 0.5em 0;
     margin: auto;
 }
 /* 3.4 用户名、密码input框样式 */
-#login ul#zh_login>li.name>input,ul#zh_login>li.pwd>input{
+#login ul#zh_login>li.uname>input,ul#zh_login>li.pwd>input{
     width: 80%;
     height: 100%;
     border: 0;
@@ -70,6 +70,7 @@
     height: 23px;
     line-height: 23px;
     margin: auto;
+    opacity: 0;
 }
 /* 忘记密码、会员注册整行li样式 */
 #login ul#zh_login>li.forget,ul#zh_login>li:last-child{
