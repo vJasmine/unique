@@ -1,0 +1,85 @@
+/* 导航栏样式 */
+.nav{
+    height: 2.2em;
+    line-height: 2.2em;
+    margin-bottom: 1em;
+}
+.nav .arrow{
+    margin-top: 0.8em;
+    width: 0.6em;
+    height: 0.6em;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg);
+}
+.nav a:hover{
+    color: #c00;
+}
+/* 详情(大小图片、标题、价格等) */
+/* .detail_left ul>li{ */
+    /* border:2px solid #fff; */
+/* } */
+.detail_left ul>li:hover{
+    border: 2px solid #c00;
+}
+.detail_right li>span:first-child,.case_style{
+    color: #666;
+}
+.title{
+    padding-bottom: 0.8em;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.subtitle{
+    font-size: 1.2em;
+    padding-bottom:0.5em;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif
+}
+.price>span:last-child{
+    color: #c00;
+    font-size: 2em;
+}
+/* 左侧案例介绍部分样式 */
+/* 导航标题 */
+.intro{
+    background: #eee;
+}
+.intro li{
+    padding: 0.5em 2em;
+}
+.intro li:hover{
+    cursor: pointer;
+}
+/* 选中时的样式 */
+.intro li.active{
+    border-top:2px solid #c00;
+    background: #fff;
+    color: #c00;
+}
+/* 案例详情 */
+.desc,.theSame{
+    border-left:  1px solid #ddd;
+    border-right:  1px solid #ddd;
+    border-bottom:  1px solid #ddd;
+}
+.desc h6{
+    border-bottom: 1px dashed #bbb;
+    padding: 0.5em 0;
+}
+.myhide{
+    display: none;
+}
+/* 右侧类似案例 */
+.theSame{
+    height: 25%;
+}
+.theSame div{
+    padding: 0.5em 0;
+    background: #eee;
+    text-align: center;
+}
+.theSame p{
+    height: 25%;
+    text-align: center;
+    padding: 10em 0;
+}

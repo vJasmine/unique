@@ -51,7 +51,7 @@
 /* 新人攻略样式 */
 /* 左右各占50% */
 #tips>div>ul{
-    /* width: 50%; */
+    height: 150px;
     overflow: hidden;
 }
 /* 字体颜色 */
@@ -71,6 +71,7 @@
 }
 #tips>div>ul>li>p:nth-child(2){
     height: 70%;
+    overflow: hidden;
 }
 /* 页脚定位 */
 #footer.stay-bottom {

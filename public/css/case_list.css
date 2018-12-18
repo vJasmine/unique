@@ -1,4 +1,4 @@
-/* 顶部筛+排序选样式 */
+/* ************* 顶部筛+排序选择样式  从此开始 ************* */
 /* 筛选外框 */
 #main>nav>ul{
     border: 1px solid #eee;
@@ -19,35 +19,80 @@
     color: #c00;
 }
 /* 鼠标悬停样式 */
-#main>nav span:hover,#main>div>nav span:hover{
+#main>nav span:hover,#main>div>nav span:not(:first-child):hover{
     cursor: pointer;
 }
 /* 排序背景 */
 #main>div>nav{
     background: #eee;
 }
-/* 图片列表样式 */
+/* *************  顶部筛+排序选择样式  到此结束  ************* */
+
+/* *************  案例列表样式  从此开始  ************* */
+/* 单个案例外边框和宽度 */
 #main>div#case_list>ul>li{
+    width: 33%;
     border: 1px solid #eee;
-    /* background: #eee; */
 }
 #main>div#case_list>ul>li:hover{
     border: 1px solid #c00;
 }
-/* 图片宽度 */
+/* 案例图片宽度 */
 #main>div#case_list a>img{
-    width: 98%;
+    width: 100%;
 }
-/* 标题颜色样式 */
-.myc00{
+/* 案例文字部分宽度、居中显示 */
+#main>div#case_list li>p{
+    width: 95%; 
+    margin: auto;
+}
+/* 标题字体大小颜色 */
+#main>div#case_list li>p.case_row1>a{
+    font-size:18px;
+    color: #000;
+}
+#main>div#case_list li>p.case_row1>a:hover{
     color: #c00;
 }
-#main>div#case_list a:hover{
+/* 价格字体大小、颜色 */
+#main>div#case_list li>p.case_row1>span{
+    font-size:20px;
     color: #c00;
 }
-
+/* 浏览量图片 */
+#main>div#case_list li>p.case_row2{
+    line-height: 30px;
+    color: #888;
+}
+#main>div#case_list li>p.case_row2 img{
+    width: 1.5em;
+}
+#main>div#case_list li>p.case_row3{
+    line-height: 30px;
+    text-align: left;
+    color: #888;
+}
+#main>div#case_list li>p.case_row3 img{
+    width: 0.8rem;
+}
 /* 页码样式 */
 #page>ul{
+    /* width: 40%; */
     margin: auto;
     cursor: pointer;
+}
+#page>ul>li{
+    width: 4em;
+    height: 2.5em;
+    margin-right: 1em;
+    text-align: center;
+    line-height: 2.5em;
+    background: #eee;
+}
+#page .choosed{
+    background: #c00;
+    color: #fff;
+}
+#page .forbidden{
+    cursor: text;
 }
